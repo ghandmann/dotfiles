@@ -67,6 +67,8 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
 	}
 fi
 
+export EDITOR=vim
+
 # Colorful ls
 alias ls="ls --color=auto"
 alias grep="grep --color=auto -i"
@@ -74,9 +76,9 @@ alias grep="grep --color=auto -i"
 #eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 export PATH=$PATH:$HOME/bin
 export TERM=xterm-color
-eval `dircolors ~/solarized.dircolors`
 
 # AndroidSDK
-
 export PATH=${PATH}:${HOME}/AndroidSDK/sdk/tools:${HOME}/AndroidSDK/sdk/platform-tools
+
+# perlbrew
 source ~/perl5/perlbrew/etc/bashrc

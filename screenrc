@@ -1,0 +1,8 @@
+vbell off
+term xterm-color
+#termcapinfo xterm-color|rxvt ti@:te@
+startup_message off
+
+# "taskleiste"
+hardstatus alwayslastline
+hardstatus string '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %d.%m.%Y %c:%s ]%{W}'
