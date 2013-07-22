@@ -81,4 +81,6 @@ export TERM=xterm-color
 export PATH=${PATH}:${HOME}/AndroidSDK/sdk/tools:${HOME}/AndroidSDK/sdk/platform-tools
 
 # perlbrew
-source ~/perl5/perlbrew/etc/bashrc
+if [ -f ~/perl5/perlbrew/etc/bashrc ]; then
+	source ~/perl5/perlbrew/etc/bashrc
+fi
