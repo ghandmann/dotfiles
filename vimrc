@@ -34,3 +34,9 @@ map <C-Left> :cprevious<CR>
 :set list
 :set listchars=tab:→\ ,eol:¶
 :set modeline
+
+" Perl Folding
+set foldmethod=syntax
+let perl_fold=1
+let perl_nofold_packages=1
+nnoremap <Space> za
