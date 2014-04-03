@@ -16,6 +16,10 @@ set backspace=2
 set cpo=aABceFs
 set ttymouse=xterm2
 
+" smart matching/searching
+set smartcase
+set ignorecase
+
 autocmd BufNewFile,BufRead *.p? compiler perl
 au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 
