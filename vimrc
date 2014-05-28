@@ -20,6 +20,8 @@ set ttymouse=xterm2
 set smartcase
 set ignorecase
 
+set autowrite
+
 autocmd BufNewFile,BufRead *.p? compiler perl
 au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 
