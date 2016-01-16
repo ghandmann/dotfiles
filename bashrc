@@ -84,3 +84,8 @@ export PATH=${PATH}:${HOME}/AndroidSDK/sdk/tools:${HOME}/AndroidSDK/sdk/platform
 if [ -f ~/perl5/perlbrew/etc/bashrc ]; then
 	source ~/perl5/perlbrew/etc/bashrc
 fi
+
+#Rakudo Perl 6
+if [ -f ~/.rakudobrew/bin/rakudobrew ]; then
+	eval "$(~/.rakudobrew/bin/rakudobrew init -)"
+fi
