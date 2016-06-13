@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'mileszs/ack.vim'
 call vundle#end()
 
 :filetype plugin on
