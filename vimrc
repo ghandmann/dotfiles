@@ -50,3 +50,9 @@ set foldmethod=syntax
 let perl_fold=1
 let perl_nofold_packages=1
 nnoremap <Space> za
+
+
+" WARNING!
+" Last statement!
+" Try to find a ".vimlocal" file in the current CWD to override these .vimrc settings
+silent! so .vimlocal
