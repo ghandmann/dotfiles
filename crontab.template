@@ -1,0 +1,4 @@
+# Usefull crontab entries
+
+# Delete Downloads older 30 days
+@daily find ~/Downloads/ -mtime +30 -exec rm -rf {} \;
