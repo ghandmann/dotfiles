@@ -1,7 +1,25 @@
-# System-wide .bashrc file for interactive bash(1) shells.
-
-# To enable the settings / commands in this file for login shells as well,
-# this file has to be sourced in /etc/profile.
+#   
+#                                                                                                     
+#   I8,        8        ,8I    db         88888888ba   888b      88  88  888b      88    ,ad8888ba,   
+#   `8b       d8b       d8'   d88b        88      "8b  8888b     88  88  8888b     88   d8"'    `"8b  
+#    "8,     ,8"8,     ,8"   d8'`8b       88      ,8P  88 `8b    88  88  88 `8b    88  d8'            
+#     Y8     8P Y8     8P   d8'  `8b      88aaaaaa8P'  88  `8b   88  88  88  `8b   88  88             
+#     `8b   d8' `8b   d8'  d8YaaaaY8b     88""""88'    88   `8b  88  88  88   `8b  88  88      88888  
+#      `8a a8'   `8a a8'  d8""""""""8b    88    `8b    88    `8b 88  88  88    `8b 88  Y8,        88  
+#       `8a8'     `8a8'  d8'        `8b   88     `8b   88     `8888  88  88     `8888   Y8a.    .a88  
+#        `8'       `8'  d8'          `8b  88      `8b  88      `888  88  88      `888    `"Y88888P"   
+#                                                                                                     
+#                                                                                                     
+#
+#     This is the .bashrc file from the your dotfiles repository!
+#     Changes to this file propagte back to the github repo and then
+#     to alle devices.
+#
+#     For local device-only changes please use .bashrc.local !
+#
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -89,3 +107,9 @@ fi
 if [ -f ~/.rakudobrew/bin/rakudobrew ]; then
 	eval "$(~/.rakudobrew/bin/rakudobrew init -)"
 fi
+
+# local .bashrc
+if [ -f ~/.bashrc.local ]; then
+	source ~/.bashrc.local
+fi
+
