@@ -23,6 +23,8 @@ set ttymouse=xterm2
 " smart matching/searching
 set smartcase
 set ignorecase
+" search highlighting
+set hlsearch
 
 set autowrite
 
