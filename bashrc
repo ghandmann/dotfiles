@@ -98,9 +98,14 @@ export TERM=xterm-color
 # AndroidSDK
 export PATH=${PATH}:${HOME}/AndroidSDK/sdk/tools:${HOME}/AndroidSDK/sdk/platform-tools
 
-# perlbrew
-if [ -f ~/perl5/perlbrew/etc/bashrc ]; then
-	source ~/perl5/perlbrew/etc/bashrc
+# system wide perlbrew
+if [ -f /opt/perl5/perlbrew/etc/bashrc ]; then
+	source /opt/perl5/perlbrew/etc/bashrc
+else
+	# user perlbrew
+	if [ -f ~/perl5/perlbrew/etc/bashrc ]; then
+		source ~/perl5/perlbrew/etc/bashrc
+	fi
 fi
 
 #Rakudo Perl 6
@@ -113,3 +118,7 @@ if [ -f ~/.bashrc.local ]; then
 	source ~/.bashrc.local
 fi
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
