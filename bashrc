@@ -125,3 +125,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # load liquidprompt
 [[ $- = *i* ]] && source ~/dotfiles/liquidprompt.git/liquidprompt
+
+# Alias ls to lsd, if lsd is installed
+if command -v lsd &> /dev/null
+then
+	alias ls="lsd"
+fi
+
