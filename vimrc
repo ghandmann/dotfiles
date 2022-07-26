@@ -37,7 +37,7 @@ au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 " Default HTML-Styles for Template-Files
 au BufNewFile,BufRead *.html.{tt,tt2,ep} set filetype=html
 
-colorscheme solarized
+colorscheme murphy
 set background=dark
 set t_Co=16
 
