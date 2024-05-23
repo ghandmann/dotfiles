@@ -10,3 +10,6 @@
 [submodule "liquidprompt.git"]
 	path = liquidprompt.git
 	url = git@github.com:nojhan/liquidprompt.git
+[submodule "liquidprompt-powerline"]
+	path = liquidprompt-powerline
+	url = git@github.com:liquidprompt/liquidprompt-powerline.git

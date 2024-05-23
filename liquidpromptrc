@@ -8,9 +8,6 @@
 #source ~/.config/liquidprompt/nojhan.theme
 #LP_PS1_FILE=~/.config/liquidprompt/nojhan.ps1
 
-source ~/dotfiles/liquidprompt.git/themes/powerline/powerline.theme
-lp_theme powerline
-
 #############
 # BEHAVIOUR #
 #############
@@ -60,11 +57,6 @@ LP_ENABLE_FQDN=0
 # set to 0 if you want to hide the logged user (it will always display different
 # users)
 LP_USER_ALWAYS=1
-
-# Display the percentages of load/batteries along with their
-# corresponding marks. Set to 0 to only print the colored marks.
-# Defaults to 1 (display percentages)
-LP_PERCENTS_ALWAYS=1
 
 # Use the permissions feature and display a red ':' before the prompt to show
 # when you don't have write permission to the current directory.
@@ -164,5 +156,13 @@ LP_ENABLE_SSH_COLORS=0
 # Specify a list of complete and colon (":") separated paths in which, all vcs
 # will be disabled
 LP_DISABLED_VCS_PATH=""
+
+# Override UserBackground to best match Aco theme (https://gogh-co.github.io/Gogh/)
+POWERLINE_USER_COLOR=(231 31 1 0 7 5)
+
+# show info about disk space, wifi, battery
+LP_ALWAYS_DISPLAY_VALUES=1
+# show them in percent if possible
+LP_DISPLAY_VALUES_AS_PERCENTS=1
 
 # vim: set et sts=4 sw=4 tw=120 ft=sh:

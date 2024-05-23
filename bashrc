@@ -125,6 +125,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # load liquidprompt
 [[ $- = *i* ]] && source ~/dotfiles/liquidprompt.git/liquidprompt
+# liquidprompt-powerline theme
+source ~/dotfiles/liquidprompt-powerline/powerline.theme
+lp_theme powerline
 
 # Alias ls to lsd, if lsd is installed
 if command -v lsd &> /dev/null
