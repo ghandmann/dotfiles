@@ -52,6 +52,7 @@ map <C-Left> :cprevious<CR>
 
 " Perl Folding
 set foldmethod=syntax
+set foldlevelstart=99
 let perl_fold=1
 let perl_nofold_packages=1
 nnoremap <Space> za
